@@ -11,6 +11,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
 
+    <!--AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -49,7 +52,7 @@
     <section class="jumbotron text-center">
       <img src="img/bluepotret.jpg" alt="Bluepotret" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Bluepotret</h1>
-      <p class="lead">Gallery | Nature</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffffff"
@@ -70,10 +73,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <p>with the concept of natural objects that are fun to look at.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <p>The objects of photos like beaches, mountains, trees, flowers, humans, culture and other things of aesthetic value.</p>
           </div>
         </div>
@@ -98,7 +101,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="img/projects/1.jpg" class="card-img-top" alt="Project 1" />
               <div class="card-body">
                 <p class="card-text">if you have a something problem, it's normal just enjoy and still relax don;t be stress___</p>
@@ -106,7 +109,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="img/projects/3.jpg" class="card-img-top" alt="Project 2" />
               <div class="card-body">
                 <p class="card-text">____Whatever you want, I just want to go home</p>
@@ -114,7 +117,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="img/projects/4.jpg" class="card-img-top" alt="Project 4" />
               <div class="card-body">
                 <p class="card-text">I want to say but I can't, let the wind arry it and carry it on___</p>
@@ -122,7 +125,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
               <img src="img/projects/2.jpg" class="card-img-top" alt="Project 5" />
               <div class="card-body">
                 <p class="card-text">____love is very simple. Enjoy your day with love<i class="bi bi-heart-fill"></i></p>
@@ -130,7 +133,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
               <img src="img/projects/5.jpg" class="card-img-top" alt="Project 3" />
               <div class="card-body">
                 <p class="card-text">Dear love, I want just say thank you for everything___</p>
@@ -148,6 +151,51 @@
       </svg>
     </section>
     <!-- Akhir Project -->
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/thumbnail/1.jpg" alt="Gambar 1" class="img-fluid gallery-mg" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/thumbnail/2.jpg" alt="Gambar 2" class="img-fluid gallery-mg" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/thumbnail/3.jpg" alt="Gambar 3" class="img-fluid gallery-mg" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/thumbnail/4.jpg" alt="Gambar 4" class="img-fluid gallery-mg" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/thumbnail/5.jpg" alt="Gambar 5" class="img-fluid gallery-mg" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/thumbnail/6.jpg" alt="Gambar 6" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Akhir Gallery -->
 
     <!-- COntact -->
     <section id="contact">
@@ -203,8 +251,34 @@
     <footer class="bg-primary text-white text-center pb-3">
       <p>Created with <i class="bi bi-heart-fill"></i> by <a href=""></a>Bluepotret</p>
     </footer>
+
     <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImage = document.querySelectorAll('.gallery-img');
+
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = 'fade-down';
+        img.dataset.aosDelay = i * 100;
+        img.datasetaosDuration = 1000;
+      });
+
+      AOS.init({
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Gallery | Nature' });
+      gsap.from('.jumbotron img', { duration: 1, rotateY: 360, opacity: 0 });
+      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
+      gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
+    </script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxIuES9CWZKW4kJIJ9jfyidltizGjWhNn2sQLyZskDwkEwIydpKOYl4Y3fmamdjlycTDQ/exec';
